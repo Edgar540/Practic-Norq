@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.sudoku_body{
+    margin-top: 2px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sudoku-board {
+  border-collapse: collapse;
+  border: 3px solid #000;
+  background: #fff;
+  margin: 7px;
+}
+
+.sudoku-board td {
+  padding: 0;
+  border: 1px solid #ccc;
+  width: 45px;
+  height: 45px;
+}
+
+.sudoku-board td:nth-child(3n) {
+  border-right: 3px solid #000;
+}
+
+.sudoku-board tr:nth-child(3n) td {
+  border-bottom: 3px solid #000;
+}
+
+.sudoku-board input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.sudoku-board input:focus {
+  background-color: #e3f2fd;
+  outline: none;
+}
+
+.sudoku-board input::-webkit-outer-spin-button,
+.sudoku-board input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
